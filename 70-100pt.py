@@ -18,11 +18,14 @@
 from Tkinter import *
 root = Tk()
 
+
 # Create the canvas widget
 drawpad = Canvas(root, width=800,height=600, background='white')
 drawpad.grid(row=0, column=1)
 
-# Insert your code here to draw the house!
 
-
+# my house with my roof
+rectangle = drawpad.create_rectangle(300,300,400,400)
+line1 = drawpad.create_line(300,300,350,200)
+line1 = drawpad.create_line(400,300,350,200)
 root.mainloop()
